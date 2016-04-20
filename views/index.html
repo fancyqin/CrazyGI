@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <title>CrazyGI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/libs/vue.js"></script>
+</head>
+<body>
+    <div id="app" class="app">
+        <h1>Lv {{level}} <span>(<%= totalLv %>)</span></h1>
+        <div class="img-box">
+            <img v-bind:src="imgSrc" alt="">
+        </div>
+        <div class="input-box J-inputBox"></div>
+        <div class="answer-box J-aBox">
+            <button v-for="answer in answers" track-by="$index">{{answer}}</button>
+        </div>
+        <div class="tips J-rightTip" style="display: none;">
+            <p>niubility! 回答正确~</p>
+            <button class="J-fresh">下一张</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/libs/jquery.js"></script>
+    <script type="text/javascript" src="js/crazyGI.js"></script>
+</body>
+</html>

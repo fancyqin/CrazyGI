@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #FFFEE9;
+    font: 12px/1.5 Arial,'Microsoft YaHei',sans-serif;
+}
+button{
+    font-family: Arial,'Microsoft YaHei',sans-serif;
+}
+.app{
+    width: 300px;
+    margin: 0 auto;
+}
+.app h1{
+    text-align: center;
+    font-size: 24px;
+}
+.img-box{
+    position: relative;
+    width: 240px;
+    height:240px;
+    margin: 0 auto;
+}
+.img-box img{
+    max-width:240px;
+    max-height:240px;
+    vertical-align: top;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+}
+.input-box{
+    text-align: center;
+    padding: 10px 0;
+}
+.input-box span{
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height:40px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    line-height: 40px;
+    cursor: pointer;
+    background: #fff;
+}
+.input-box .wrong{
+    border-color: #f00;
+}
+.answer-box{
+    /*width: 260px;*/
+    text-align: center;
+}
+.answer-box button{
+    display: inline-block;
+    width:36px;
+    height:36px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin: 0 -1px -1px 0;
+    background: #f2f2f2;
+    padding: 0;
+}
+.answer-box .hide{
+    text-indent: -9999em;
+    visibility: hidden;
+}
+.tips{
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+.tips button{
+    width:100px;
+    height:30px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
